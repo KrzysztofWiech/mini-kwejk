@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //tworzy klasę w której obiekt będziemy mogli wstrzikiwać w innej klasie
+//Adnotacja @Component pozwala nam na wykorzystanie adnotacji @Autowired czyli wstrzykniecie zaleznosci do @Controller
 @Component
 public class GifRepository {
 
