@@ -36,4 +36,6 @@ public class CategoryController {
         modelMap.put("category", categoryRepository.getCategoryById(id));
         return "category";
     }
+
+
 }

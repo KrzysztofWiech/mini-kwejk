@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 //tworzy klasę w której obiekt będziemy mogli wstrzikiwać w innej klasie
@@ -49,4 +50,15 @@ public class GifRepository {
         }
         return categoryGifs;
     }
+
+    public List<Gif> getSearchNameGifs(String name) {
+        List<Gif> searchNameGif = new ArrayList<>();
+        for (Gif gif : ALL_GIFS) {
+            if (gif.getName().contains(name)) {
+                searchNameGif.add(gif);
+            }
+        }
+        return searchNameGif;
+    }
+
 }

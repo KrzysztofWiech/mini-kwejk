@@ -1,11 +1,9 @@
 package com.example.kwejk.data;
 
 import com.example.kwejk.model.Category;
-import com.example.kwejk.model.Gif;
 import org.springframework.stereotype.Component;
 
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,5 +23,6 @@ public class CategoryRepository {
     public static Category getCategoryById(int id) {
         return ALL_CATEGORIES.get(id);
     }
+
 
 }
